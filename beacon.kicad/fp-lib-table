@@ -1,0 +1,6 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "RP2354A") (type "KiCad") (uri "${KIPRJMOD}/libs/RP2354A.pretty") (options "") (descr ""))
+	(lib (name "ABM8-272-T3") (type "KiCad") (uri "${KIPRJMOD}/libs/ABM8-272-T3") (options "") (descr ""))
+	(lib (name "AOTA-B201610S3R3-101-T") (type "KiCad") (uri "${KIPRJMOD}/libs/AOTA-B201610S3R3-101-T") (options "") (descr ""))
+)
