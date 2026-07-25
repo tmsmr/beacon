@@ -3796,6 +3796,10 @@
 		(uuid "281191bb-dc26-4aad-8312-b6dd0f7e073b")
 	)
 	(no_connect
+		(at 186.69 151.13)
+		(uuid "2c2ac00f-7486-4299-ba3c-e4cef165bdf7")
+	)
+	(no_connect
 		(at 186.69 100.33)
 		(uuid "3f4f3eac-cc60-4768-b93d-eb5165009c84")
 	)
@@ -3920,11 +3924,7 @@
 		(uuid "f1cd97be-018d-4a82-a300-03e4e2f01482")
 	)
 	(no_connect
-		(at 186.69 77.47)
-		(uuid "f3d6e7a1-9894-4e74-9eb9-6388e3f6a848")
-	)
-	(no_connect
-		(at 236.22 105.41)
+		(at 248.92 119.38)
 		(uuid "f8034d06-1ca8-4d97-b8ff-781e0600bce2")
 	)
 	(wire
@@ -3959,7 +3959,7 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 105.41) (xy 220.98 105.41)
+			(xy 214.63 119.38) (xy 226.06 119.38)
 		)
 		(stroke
 			(width 0)
@@ -4259,6 +4259,16 @@
 	)
 	(wire
 		(pts
+			(xy 231.14 119.38) (xy 233.68 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4cd19760-d5d1-4fbd-8d54-1ea59dd844c6")
+	)
+	(wire
+		(pts
 			(xy 113.03 102.87) (xy 120.65 102.87)
 		)
 		(stroke
@@ -4339,7 +4349,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 151.13) (xy 193.04 151.13)
+			(xy 186.69 77.47) (xy 193.04 77.47)
 		)
 		(stroke
 			(width 0)
@@ -4918,7 +4928,7 @@
 		(uuid "004e6e7b-0c44-424d-9cc2-4a044ae8e94f")
 	)
 	(label "RGB_DIN"
-		(at 193.04 151.13 0)
+		(at 193.04 77.47 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4978,7 +4988,7 @@
 		(uuid "3adca1c5-4ad9-451c-99fc-2f8c81855f77")
 	)
 	(label "RGB_DIN"
-		(at 209.55 105.41 0)
+		(at 214.63 119.38 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5048,7 +5058,7 @@
 		(uuid "96d3a948-37ae-4eb6-9f22-4abd29a72555")
 	)
 	(label "SWCLK"
-		(at 33.02 167.64 0)
+		(at 33.02 172.72 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5098,7 +5108,7 @@
 		(uuid "d5907375-bcb7-41eb-b1c8-438841650cde")
 	)
 	(label "SWDIO"
-		(at 33.02 172.72 0)
+		(at 33.02 167.64 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5369,7 +5379,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 228.6 97.79 0)
+		(at 241.3 111.76 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5380,7 +5390,7 @@
 		(fields_autoplaced yes)
 		(uuid "06f20d68-0fa5-44c2-9dc0-e44d320f4a6d")
 		(property "Reference" "#PWR020"
-			(at 228.6 101.6 0)
+			(at 241.3 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5391,7 +5401,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 228.6 92.71 0)
+			(at 241.3 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5401,7 +5411,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 228.6 97.79 0)
+			(at 241.3 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5412,7 +5422,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 228.6 97.79 0)
+			(at 241.3 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5423,7 +5433,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 228.6 97.79 0)
+			(at 241.3 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5561,7 +5571,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "RP2354A:C_0402_1005Metric_small_pads"
 			(at 22.86 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -5771,8 +5781,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x05")
-		(at 25.4 36.83 0)
-		(mirror y)
+		(at 25.4 36.83 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5782,7 +5791,7 @@
 		(dnp no)
 		(uuid "1a8d808d-3aed-4041-952a-621f41ca3353")
 		(property "Reference" "J1"
-			(at 22.86 35.5599 0)
+			(at 22.86 38.1001 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5793,7 +5802,7 @@
 			)
 		)
 		(property "Value" "USB"
-			(at 22.86 38.0999 0)
+			(at 22.86 35.5601 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6026,7 +6035,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 228.6 113.03 0)
+		(at 241.3 127 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6037,7 +6046,7 @@
 		(fields_autoplaced yes)
 		(uuid "2970bbc1-ea3d-40f6-b891-7e8a011fb585")
 		(property "Reference" "#PWR021"
-			(at 228.6 119.38 0)
+			(at 241.3 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6048,7 +6057,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 228.6 118.11 0)
+			(at 241.3 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6058,7 +6067,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 228.6 113.03 0)
+			(at 241.3 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6069,7 +6078,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 228.6 113.03 0)
+			(at 241.3 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6080,7 +6089,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 228.6 113.03 0)
+			(at 241.3 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6740,6 +6749,86 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
+		(at 228.6 119.38 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4d535688-cedd-4e01-84bb-2aeab56235a2")
+		(property "Reference" "R3"
+			(at 228.6 114.3 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "500"
+			(at 228.6 116.84 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 228.6 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 228.6 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 228.6 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7abb103a-8488-4e72-943b-f515ee060fbf")
+		)
+		(pin "2"
+			(uuid "4d8d1855-1532-4b62-b79f-fb9aef73d2e8")
+		)
+		(instances
+			(project "beacon"
+				(path "/7a6a2811-0e11-481c-9755-3c5cda6fabc7"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
 		(at 34.29 41.91 180)
 		(unit 1)
 		(body_style 1)
@@ -6772,7 +6861,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 34.29 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -6851,7 +6940,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 123.19 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -7015,7 +7104,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 85.09 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -7176,7 +7265,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 123.19 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -7500,7 +7589,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "RP2354A:C_0402_1005Metric_small_pads"
 			(at 33.02 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -7710,7 +7799,7 @@
 	)
 	(symbol
 		(lib_id "LED:SK6812")
-		(at 228.6 105.41 0)
+		(at 241.3 119.38 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7721,7 +7810,7 @@
 		(fields_autoplaced yes)
 		(uuid "b02a6d14-019f-46cb-9506-6a7d46521477")
 		(property "Reference" "D1"
-			(at 238.76 98.9898 0)
+			(at 251.46 112.9598 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7731,7 +7820,7 @@
 			)
 		)
 		(property "Value" "SK6812"
-			(at 238.76 101.5298 0)
+			(at 251.46 115.4998 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7741,7 +7830,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 229.87 113.03 0)
+			(at 242.57 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7753,7 +7842,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-			(at 231.14 114.935 0)
+			(at 243.84 128.905 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7765,7 +7854,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 228.6 105.41 0)
+			(at 241.3 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8307,7 +8396,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 43.18 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -8873,7 +8962,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "RP2354A:RP2354A-QFN-60-1EP_7x7mm_P0.4mm_EP3.4x3.4mm"
+		(property "Footprint" "RP2354A:RP2354A-QFN-60-1EP_7x7_P0.4mm_EP3.4x3.4mm_ThermalVias"
 			(at 161.29 115.57 0)
 			(hide yes)
 			(show_name no)
