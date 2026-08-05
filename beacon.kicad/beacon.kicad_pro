@@ -605,6 +605,7 @@
       "netlist": "",
       "plot": "",
       "specctra_dsn": "",
+      "step": "beacon.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
