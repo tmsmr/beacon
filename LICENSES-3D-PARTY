@@ -1,7 +1,7 @@
 beacon uses third-party libraries or other resources that may
 be distributed under licenses different than the beacon software.
 
-1) https://github.com/PDBeal/pico-sk6812.git
+1) https://github.com/PDBeal/pico-sk6812
 ---
                    GNU LESSER GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
