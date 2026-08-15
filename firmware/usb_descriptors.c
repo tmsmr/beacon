@@ -93,10 +93,10 @@ enum {
 };
 
 static char const *string_desc_arr[] = {
-    (const char[]){0x09, 0x04}, // en_US
-    BEACON_MANUFACTURER,
-    BEACON_PRODUCT_NAME,
-    NULL,
+    [STRID_LANGID] = (const char[]){0x09, 0x04}, // en_US
+    [STRID_MANUFACTURER] = BEACON_MANUFACTURER,
+    [STRID_PRODUCT] = BEACON_PRODUCT_NAME,
+    [STRID_SERIAL] = NULL,
 };
 
 static uint16_t _desc_str[32 + 1];
