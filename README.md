@@ -14,6 +14,9 @@
 [Pico-SDK project](./firmware)
 
 ## Attribution
+### PCB
+RP2354A-specific design is based on https://datasheets.raspberrypi.com/rp2350/Minimal-KiCAD.zip
+
 ### USB HID
 The USB HID implementation is based on various sources:
 - https://github.com/hathach/tinyusb
