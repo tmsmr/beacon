@@ -3,6 +3,16 @@
 
 <img src="flashing-beacon.png" width="64">
 
+## Components
+### Device
+[KiCAD Project](./beacon.kicad)
+
+<img src="beacon.kicad/pcb-3d.png" width="400"></br>
+**Development PCB*
+
+### Firmware
+[Pico-SDK project](./firmware)
+
 ## Attribution
 ### USB HID
 The USB HID implementation is based on various sources:
