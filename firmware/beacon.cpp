@@ -16,8 +16,8 @@ static uint8_t inbound_buffer[CFG_TUD_HID_EP_BUFSIZE] = {};
         tud_task();
 
         if (change_pending && tud_hid_ready()) {
-            char ret[] = {0x00};
-            tud_hid_report(0, ret, 1);
+            constexpr char ret[BEACON_HID_REPORT_LEN] = {};
+            tud_hid_report(0, ret, BEACON_HID_REPORT_LEN);
             led.setPixelColor(0, inbound_buffer[2], inbound_buffer[3], inbound_buffer[4], 0);
             led.show();
             change_pending = false;

@@ -11,6 +11,8 @@
 #define BEACON_MANUFACTURER "tmsmr"
 #define BEACON_PRODUCT_NAME "beacon"
 
+#define BEACON_HID_REPORT_LEN 8
+
 #define POWER_CONSUMPTION_MA 100 // TODO: measure
 
 #endif //BEACON_CONFIG_H

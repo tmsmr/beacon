@@ -38,7 +38,7 @@ uint8_t const *tud_descriptor_device_cb(void) {
 //
 
 uint8_t const desc_hid_report[] = {
-    TUD_HID_REPORT_DESC_GENERIC_INOUT(CFG_TUD_HID_EP_BUFSIZE)
+    TUD_HID_REPORT_DESC_GENERIC_INOUT(BEACON_HID_REPORT_LEN)
 };
 
 uint8_t const *tud_hid_descriptor_report_cb(uint8_t instance) {
