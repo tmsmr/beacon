@@ -1,17 +1,27 @@
 #include "pico/stdlib.h"
 #include <sk6812.h>
 #include "tusb.h"
+#include "tusb_config.h"
 #include "config.h"
 
-static auto led = SK6812(1, SK6812_PIN);
+static volatile bool change_pending = false;
+static uint8_t inbound_buffer[CFG_TUD_HID_EP_BUFSIZE] = {};
 
 [[noreturn]] int main() {
-    led.begin();
-
     tusb_init();
+    auto led = SK6812(1, SK6812_PIN);
+    led.begin();
 
     while (true) {
         tud_task();
+
+        if (change_pending && tud_hid_ready()) {
+            char ret[] = {0x00};
+            tud_hid_report(0, ret, 1);
+            led.setPixelColor(0, inbound_buffer[2], inbound_buffer[3], inbound_buffer[4], 0);
+            led.show();
+            change_pending = false;
+        }
     }
 }
 
@@ -35,14 +45,8 @@ void tud_hid_set_report_cb(
     (void) report_id;
     (void) report_type;
 
-    char ret[] = {0x00};
-    if (bufsize != 5 || report_id != 0x00) {
-        ret[0] = 0x01;
-    } else {
-        led.setPixelColor(0, buffer[2], buffer[3], buffer[4], 0);
-        led.show();
-    }
-    tud_hid_report(0, ret, 1);
+    memcpy(inbound_buffer, buffer, bufsize);
+    change_pending = true;
 }
 
 void tud_mount_cb() {
