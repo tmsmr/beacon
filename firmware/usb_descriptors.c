@@ -1,19 +1,8 @@
 #include "tusb.h"
 #include "bsp/board_api.h"
+#include "config.h"
 
 #define USB_BCD 0x0200 // USB 2.0
-
-#define BEACON_USB_VID 0x1209
-#define BEACON_USB_PID 0x0001 // TODO: get one at https://pid.codes/
-#define BEACON_USB_DEVICE_VER 0x0010
-
-#define BEACON_MANUFACTURER "tmsmr"
-#define BEACON_PRODUCT_NAME "beacon"
-
-#define REPORT_ID_KEYBOARD 1
-
-#define POWER_CONSUMPTION_MA 100 // TODO: measure
-
 #define DEVICE_USB_POLL_FRAMES  10
 
 //
