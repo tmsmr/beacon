@@ -10,33 +10,9 @@
 		E93F4E7E30361F1B00A2D119 /* beacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beacon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		E93F4E9230361F6E00A2D119 /* Exceptions for "beacon" folder in "beacon" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				.swift,
-			);
-			target = E93F4E7D30361F1B00A2D119 /* beacon */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
-		E93F4E9330361F6E00A2D119 /* Exceptions for "beacon" folder in "Compile Sources" phase from "beacon" target */ = {
-			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
-			buildPhase = E93F4E7A30361F1B00A2D119 /* Sources */;
-			membershipExceptions = (
-				.swift,
-			);
-		};
-/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		E93F4E8030361F1B00A2D119 /* beacon */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				E93F4E9230361F6E00A2D119 /* Exceptions for "beacon" folder in "beacon" target */,
-				E93F4E9330361F6E00A2D119 /* Exceptions for "beacon" folder in "Compile Sources" phase from "beacon" target */,
-			);
 			path = beacon;
 			sourceTree = "<group>";
 		};
