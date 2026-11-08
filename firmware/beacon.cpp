@@ -26,8 +26,8 @@ static uint8_t inbound_buffer[CFG_TUD_HID_EP_BUFSIZE] = {};
 }
 
 uint16_t tud_hid_get_report_cb(
-    const uint8_t instance, const uint8_t report_id, const hid_report_type_t report_type,
-    const uint8_t *buffer, const uint16_t reqlen
+    uint8_t instance, uint8_t report_id, hid_report_type_t report_type,
+    uint8_t* buffer, uint16_t reqlen
 ) {
     (void) instance;
     (void) report_id;
@@ -38,8 +38,8 @@ uint16_t tud_hid_get_report_cb(
 }
 
 void tud_hid_set_report_cb(
-    const uint8_t instance, const uint8_t report_id, const hid_report_type_t report_type,
-    const uint8_t *buffer, const uint16_t bufsize
+    uint8_t instance, uint8_t report_id, hid_report_type_t report_type,
+    uint8_t const* buffer, uint16_t bufsize
 ) {
     (void) instance;
     (void) report_id;
